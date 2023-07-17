@@ -3,13 +3,17 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Building stage'
+        git 'https://github.com/Amits64/knowledgehut.git'
       }
     }
-
+    stage('Build') {
+      steps {
+        sh 'mvn clean install'
+      }
+    }
     stage('Deploy') {
       steps {
-        echo 'Deployment stage'
+        sh 'cp target/jpetstore.war /opt/tomcat/webapps/'
       }
     }
 
