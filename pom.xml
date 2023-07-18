@@ -6,7 +6,7 @@
 
   <groupId>org.mybatis</groupId>
   <artifactId>maven-war-plugin</artifactId>
-  <artifactId>jpetstore</artifactId>
+  <artifactId>jpetstore6</artifactId>
   <version>6.1.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
